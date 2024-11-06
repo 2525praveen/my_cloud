@@ -1,0 +1,51 @@
+------------------------------EBS VOLUMES----------------------------------------
+
+---------------------------------------------------------------------------------
+
+-> Create the Volume
+
+-> Attach the Volume to the EC2 instance
+
+-> Connect to the EC2 instance
+
+-> Check the volume is attached or not as follows
+      # lsblk
+
+-> Check if is there any data on volume to process
+      # file -s /dev/xvdf
+
+-> Let's create Filesystem for the volume
+# mkfs -t ext4 /dev/xvdf
+
+
+-> Make a directory
+# mkdir /fileserver
+
+
+-> Mount the disk/server/file
+# mount /dev/xvdf  /fileserver
+
+
+-> unmount 
+# umount /dev/xvdf
+
+> Check whether volume is unmounted or not
+# cd /fileserver
+# ls 
+-> Change dir to fileserver
+# cd /fileserver
+
+
+-> create another files
+
+
+-> umount the volume 
+#umount /dev/xvdf
+
+
+
+
+->  Check whether volume is unmounted or not
+# cd /fileserver
+# ls
+
