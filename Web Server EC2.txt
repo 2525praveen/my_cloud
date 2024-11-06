@@ -1,0 +1,34 @@
+Installing Web server instance on EC2
+*************************************
+*************************************
+
+1. Start EC2 Instance
+
+2. Launch Instance
+
+3. In security group select Ssh and http 
+
+4. Start the server
+# ssh -i prime.pem ubuntu@youripv4address of server
+
+5. Update the server
+# sudo apt update - for updating the packages.
+           OR
+# sudo apt-get update
+
+6. Install apache2 Web Server
+# sudo apt install apache2 
+          OR
+# sudo get-apt install apache2
+
+7. Edit the index.html file
+# sudo nano /var/www/html
+
+8. Check List of Directories in /var/www/html for seeing index.html file
+# ls - index
+
+9. Start Web Server after checking status of web server
+# sudo service apache2 status - server is running or not check here
+
+10. Finally go the browser and see the result is really the content of file is showing there
+    - To check used http instead of https
