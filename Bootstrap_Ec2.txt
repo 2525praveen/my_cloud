@@ -1,0 +1,5 @@
+!#/bin/bash - Hash bang bin bash [ First Line of Shell or bash]
+sudo su - change to root user directly
+apt-get update -y [ y means yes permission] 
+apt install apache2 -y 
+service apache2 start
