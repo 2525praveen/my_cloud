@@ -39,7 +39,7 @@
 -> create another files
 
 
--> umount the volume 
+-> umount the volume (excessive disk added via attaching it to an instance)
 #umount /dev/xvdf
 
 
